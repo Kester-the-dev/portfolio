@@ -11,6 +11,23 @@ Header{
   justify-content: space-around;
   align-items: center;
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#Home{
+  padding-top: 70px;
+}
+.folow{
+  display: none;
+}
+
+hr{
+  margin-right: 170px;
+  height: 70vh;
+ 
+  background-color: black;
 }
 
 Header>img{
@@ -39,6 +56,19 @@ span{
   color: white;
 }
 
+#About{
+  background-color: black;
+  text-align: center;
+ padding: 50px;
+ line-height: 30px;
+ font-size: bold;
+}
+
+#my-skills>h1{
+  text-align: center;
+  padding-top: 70px;
+}
+
 .sec{
   display: flex;
   justify-content: space-around;
@@ -50,12 +80,19 @@ span{
   border-radius: 30%;
 }
 
-button{
-  height: 30px;
+.button{
+  display: flex;
+  gap: 10px;
+  height: 10%;
+  width: 45%;
   border-radius: 10px;
-  border: 0;
-  background-color: rgb(30, 29, 34);
-  color: white;
+ 
+}
+
+.cont>a>img{
+  margin-top: 10px;
+  width: 6%;
+  border-radius: 20px;
 }
 
 .sec2{
@@ -68,48 +105,149 @@ button{
 }
 
 #pic>img{
-  width: 80%;
-  height: 100%;
+  width: 50vw;
+  height: 70vh;
   border-radius: 0;
 }
 .show{
   display: flex;
-  justify-content:space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content:center;
   color: black;
+  padding-bottom: 30px;
+ 
 }
-.dh{
-  padding-right: 150px;
 
+.dh{
+  padding-right: 50px;
 }
+
 
 .show2{
  background-color: black;
  width: 100%;
  margin-bottom: 30px;
  margin-top: 20px;
+ padding-top: 30px;
+ padding-bottom: 30px;
 
 }
 .fcard-1{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  width: 100%;
+  background-color: azure;
+  color: black;
+}
+.fcard-2{
+  display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: azure;
+  color: black;
 }
 .fcard>img{
  width: 90px;
 }
+.fcardf>img{
+ width: 100px;
+ padding-right: 50px;
+ border-radius: 50px;
+}
+.fcardb{
+  padding-right: 40px;
+}
+.fcardb>img{
+ width: 100px;
+ padding-left: 20px;
+ border-radius: 50px;
 
+}
 
+.fcard-3{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   background-color: azure;
+   color: black;
 
+}
+
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  
+}
+#project{
+  text-align: center;
+  padding: 40px;
+  color: white; 
+  scroll-padding: 30px;
+}
+
+.pro{
+  margin: auto;
+  width: 45%;
+  height: 40%;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  scroll-padding: 40px;
+}
+
+.pro>img{
+  width: 15vw;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+a>img{
+  width: 13%;
+}
 
 footer{
   background-color: black;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.foot{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+.con>a>img{
+  margin: auto;
+  margin-top: 20px;
+  width: 5%;
+  border-radius: 50px;
+}
+
+
+/* -----------------@MEDIA-QUERRY-------------- */
 
  @media(max-width: 870px) {
+
+  body{
+    background-color: brown;
+    overflow-x: hidden;
+  }
+
   Header>button{
     height: 30px;
     border-radius: 10px;
@@ -124,11 +262,14 @@ footer{
 
   Header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
     width: 100vw;
     height: 10vh;
+    font-size: 8px;
+    font-weight: bold;
   }
 
   .sec{
@@ -137,6 +278,10 @@ footer{
     justify-content: center;
     text-align: center;
     color: black;
+    gap: 20px;
+  }
+  .folow{
+    display: block;
   }
 
   .sec,img{
@@ -144,17 +289,29 @@ footer{
     align-items: center;
     text-align: center;
     border-radius: 30%;
-   margin-top: 30px;
-   margin-left: 25px;
+   margin-top: 5px;
+   margin-right: 20px;
+   width: 80%;
   }
   button{
-    width: 50%;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     border: 0;
     background-color: rgb(30, 29, 34);
     color: white;
     cursor: pointer;
+
+  }
+  .button{
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: beige;
+    margin-left: 90px;
+    display: none;
   }
 
   .sec2{
@@ -164,9 +321,9 @@ footer{
     color: rgba(255, 255, 255, 0.712);
     background-color: black;
     padding-right: 70px;
-    padding-left: 30px;
+    padding-left: 60px;
     text-align: center;
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .show{
@@ -177,6 +334,57 @@ footer{
     color: black;
     text-align: center;
     align-items: center;
+  }
+  .fcard-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: azure;
+    color: black;
+  }
+  .fcard-2{
+    display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: azure;
+    color: black;
+  }
+  .fcard>img{
+   width: 50px;
+  }
+  .fcardf>img{
+    margin-top: 90px;
+   width: 80px;
+   height: 60px;
+   padding-right: 0;
+   border-radius: 50px;
+  }
+  .fcardb{
+    padding-right: 20px;
+  
+  }
+  .fcardb>img{
+   width: 50px;
+   padding-left: 20px;
+   border-radius: 50px;
+  
+  }
+  
+  .fcard-3{
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+     text-align: center;
+     width: 100%;
+     background-color: azure;
+     color: black;
+  
   }
 
   #pic>img{
@@ -192,24 +400,110 @@ footer{
     color: black;
     text-align: center;
     align-items: center;
+    font-size: 1rem;
   }
   .dh{
    text-align: center;
    justify-content: center;
    align-items: center;
+   text-align: center;
    padding-right: 50px;
-   font-size: 2rem;
-   padding-left: 110px;
+   font-size: 1rem;
+   padding-left: 50px;
+  }
+  .pro{
+    margin: auto;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    scroll-padding: 40px;
   }
 
+  #projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+  }
+  #project{
+    text-align: center;
+    padding: 40px;
+    color: white; 
+    scroll-padding: 30px;
+  }
+  .pro>img{
+    width: 30vw;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  a>img{
+    width: 15%;
+  }
+
+  
+/* #pic>img{
+  width: 50vw;
+  height: 70vh;
+  border-radius: 0;
+}
+.show{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content:center;
+  color: black;
+  padding-bottom: 30px;
+ 
+} */
+
   footer{
-    padding: 0 30px ;
     background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 10px;
+  }
+  .con>a>img{
+    margin: auto;
+    margin-top: 20px;
+    width: 20px;
+    border-radius: 50px;
+  }
+  hr{
+    display: none;
+  }
+ }
+
+ @media(max-width: 375px){
+
+  Header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    font-size: 4px;
+    font-weight: bold;
   }
-
+  .con>a>img{
+    margin: auto;
+    margin-top: 20px;
+    width: 10px;
+    border-radius: 50px;
+  }
  }
 
